@@ -75,6 +75,10 @@ import { map } from 'rxjs/operators';
             <mat-icon>insights</mat-icon>
             Insights
           </a>
+          <a mat-button routerLink="/documents" routerLinkActive="active">
+            <mat-icon>upload_file</mat-icon>
+            Documents
+          </a>
         </nav>
 
         <div class="auth-section">
@@ -130,6 +134,10 @@ import { map } from 'rxjs/operators';
           <a mat-list-item routerLink="/insights" (click)="closeMobileMenu()">
             <mat-icon matListItemIcon>insights</mat-icon>
             <span matListItemTitle>Insights</span>
+          </a>
+          <a mat-list-item routerLink="/documents" (click)="closeMobileMenu()">
+            <mat-icon matListItemIcon>upload_file</mat-icon>
+            <span matListItemTitle>Documents</span>
           </a>
           <mat-divider></mat-divider>
           <a mat-list-item routerLink="/profile/settings" (click)="closeMobileMenu()">

@@ -8,5 +8,6 @@ export const routes: Routes = [
   { path: 'auth/reset-password', loadComponent: () => import('./features/auth/reset-password/reset-password.component').then(m => m.ResetPasswordComponent) },
   { path: 'auth/verify-email', loadComponent: () => import('./features/auth/verify-email/verify-email.component').then(m => m.VerifyEmailComponent) },
   { path: 'profile', loadChildren: () => import('./features/profile/profile.module').then(m => m.ProfileModule) },
+  { path: 'documents', loadComponent: () => import('./features/document-upload/document-upload.component').then(m => m.DocumentUploadComponent) },
   { path: '**', redirectTo: '' }
 ]; 
